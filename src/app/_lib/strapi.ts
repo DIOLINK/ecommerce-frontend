@@ -1,4 +1,5 @@
-import { ROUTES } from '@/app/_config/routes';
+import { HTTP_METHOD, ROUTES } from '@/app/_config';
+
 import { Metadata } from 'next';
 
 const { STRAPI_HOST, STRAPI_TOKEN } = process.env;
@@ -8,6 +9,7 @@ export function fetchStrapiQuery(url: string) {
     headers: {
       Authorization: `Bearer ${STRAPI_TOKEN}`,
     },
+    method: HTTP_METHOD.GET,
   }).then((res) => res.json());
 }
 
