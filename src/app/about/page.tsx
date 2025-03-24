@@ -1,5 +1,11 @@
-import { AboutPage } from '@/app/_components';
+import { AboutPage, LoadingComponent } from '@/app/_components'
+import { ROUTES } from '@/app/_config/routes'
+import { Suspense } from 'react'
 
 export default function About() {
-  return <AboutPage />;
+  return (
+    <Suspense fallback={<LoadingComponent />} name={ROUTES.PAGES.ABOUT.NAME}>
+      <AboutPage />
+    </Suspense>
+  )
 }

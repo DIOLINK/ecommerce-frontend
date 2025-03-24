@@ -1,3 +1,5 @@
-export { default as Layout } from './Layout';
-export { default as ThemeController } from './Theme/Controller';
-export * from './Views';
+export { default as Layout } from './Layout'
+export { default as LayoutTemplate } from './Layout/Template'
+export { default as LoadingComponent } from './Loading'
+export { default as ThemeController } from './Theme/Controller'
+export * from './Views'

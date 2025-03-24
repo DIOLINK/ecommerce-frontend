@@ -1,4 +1,4 @@
-import { geistMono, geistSans } from '@/app/_config/fouts';
+import { LayoutTemplate } from '@/app/_components';
 import { generateMetadata } from '@/app/_lib/strapi';
 import type { Metadata } from 'next';
 import './globals.css';
@@ -18,13 +18,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" data-theme>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
-  );
+  return <LayoutTemplate>{children}</LayoutTemplate>;
 }

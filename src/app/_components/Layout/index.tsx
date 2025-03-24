@@ -1,7 +1,8 @@
-import NavbarComponent from '@/app/_components/Navbar';
+import NavbarComponent from '@/app/_components/Navbar'
+export { default as LayoutTemplate } from './Template'
 interface LayoutProps {
-  children: React.ReactNode;
-  footerContent?: React.ReactNode;
+  children: React.ReactNode
+  footerContent?: React.ReactNode
 }
 const Layout = ({ children, footerContent }: LayoutProps) => {
   return (
@@ -18,7 +19,7 @@ const Layout = ({ children, footerContent }: LayoutProps) => {
         )}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout
