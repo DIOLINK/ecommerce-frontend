@@ -7,6 +7,7 @@ export default function useTheme() {
   const [theme, setTheme] = useState(value);
   const toggleRef = useRef<HTMLInputElement | null>(null);
   useEffect(() => {
+    toggleRef.current!.checked = theme === THEME.dark;
     document.documentElement.setAttribute(THEME.dataTheme, theme);
   }, [theme]);
 
