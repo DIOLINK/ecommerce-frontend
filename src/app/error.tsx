@@ -8,7 +8,7 @@ export default function GlobalError({
   error: Error & { digest?: string };
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="dracula">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
