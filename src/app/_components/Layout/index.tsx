@@ -1,5 +1,5 @@
-import NavbarComponent from '@/app/_components/Navbar'
-export { default as LayoutTemplate } from './Template'
+import { FooterComponent, NavbarComponent } from '@/app/_components'
+
 interface LayoutProps {
   children: React.ReactNode
   footerContent?: React.ReactNode
@@ -12,11 +12,8 @@ const Layout = ({ children, footerContent }: LayoutProps) => {
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
           {children}
         </main>
-        {footerContent && (
-          <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-            {footerContent}
-          </footer>
-        )}
+
+        <FooterComponent />
       </div>
     </>
   )

@@ -1,20 +1,20 @@
-'use client';
+'use client'
 
-import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
+import { useRouter } from 'next/navigation'
+import { useEffect } from 'react'
 
 export default function GlobalErrorPage({
   error,
 }: {
-  error: Error & { digest?: string };
+  error: Error & { digest?: string }
 }) {
-  const routes = useRouter();
+  const routes = useRouter()
   useEffect(() => {
-    console.error(error);
-  }, [error]);
+    console.error(error)
+  }, [error])
 
   function handleClick() {
-    routes.refresh();
+    routes.refresh()
   }
   return (
     <>
@@ -22,5 +22,5 @@ export default function GlobalErrorPage({
       {error.message && <p>{error.message}</p>}
       <button onClick={handleClick}>Try again</button>
     </>
-  );
+  )
 }

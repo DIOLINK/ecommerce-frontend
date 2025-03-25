@@ -1,10 +1,10 @@
-import { geistMono, geistSans } from '@/app/_config/fouts';
+import { geistMono, geistSans } from '@/app/_config/fouts'
 export default function LayoutTemplate({
   children,
   className,
 }: {
-  children: React.ReactNode;
-  className?: string;
+  children: React.ReactNode
+  className?: string
 }) {
   return (
     <html lang="en" data-theme>
@@ -15,5 +15,5 @@ export default function LayoutTemplate({
         {children}
       </body>
     </html>
-  );
+  )
 }

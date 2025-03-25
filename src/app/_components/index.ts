@@ -1,5 +1,10 @@
+export { default as Avatar } from './Avatar'
+export { default as FooterComponent } from './Footer'
 export { default as Layout } from './Layout'
 export { default as LayoutTemplate } from './Layout/Template'
 export { default as LoadingComponent } from './Loading'
+export { default as NavbarComponent } from './Navbar'
+export { default as ShoppingCart } from './ShoppingCart'
 export { default as ThemeController } from './Theme/Controller'
+
 export * from './Views'

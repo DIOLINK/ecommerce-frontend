@@ -20,4 +20,4 @@ export const STR_TXT = {
   oops: 'Oops!!!',
   sorry: 'Sorry, an unexpected error has occurred.',
   titleError: 'Message Error',
-};
+}

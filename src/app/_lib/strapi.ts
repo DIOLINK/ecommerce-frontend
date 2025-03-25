@@ -5,7 +5,7 @@ import { Metadata } from 'next'
 const { STRAPI_HOST, STRAPI_TOKEN } = process.env
 
 export function fetchStrapiQuery<T>(url: string): Promise<T> {
-  return fetch(`${STRAPI_HOST}${url}`, {
+  return fetch(STRAPI_HOST + url, {
     headers: {
       Authorization: `Bearer ${STRAPI_TOKEN}`,
     },

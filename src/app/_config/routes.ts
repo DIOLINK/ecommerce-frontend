@@ -1,6 +1,7 @@
 const { STRAPI_HOST } = process.env
 export const ROUTES = {
   STRAPRI: {
+    HOST: STRAPI_HOST,
     IMAGE_URL: function (url: string) {
       return `${STRAPI_HOST}${url}`
     },

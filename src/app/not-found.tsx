@@ -1,12 +1,15 @@
-import { Layout, LayoutTemplate } from '@/app/_components';
-import { ROUTES } from '@/app/_config';
-import { fetchStrapiQuery } from '@/app/_lib/strapi';
-import Image from 'next/image';
+import { Layout, LayoutTemplate } from '@/app/_components'
+import { ROUTES } from '@/app/_config'
+import { fetchStrapiQuery } from '@/app/_lib/strapi'
+import { IStrapi } from '@/app/_models/strapi.model'
+import Image from 'next/image'
 
 export default async function NotFound() {
-  const { data: notFound } = await fetchStrapiQuery(ROUTES.STRAPRI.NOT_FOUND());
-  const { title, description } = notFound;
-  const [image] = notFound.image;
+  const { data: notFound } = await fetchStrapiQuery<IStrapi>(
+    ROUTES.STRAPRI.NOT_FOUND(),
+  )
+  const { title, description } = notFound
+  const [image] = notFound.image
   return (
     <LayoutTemplate className="p-0">
       <Layout>
@@ -25,5 +28,5 @@ export default async function NotFound() {
         </div>
       </Layout>
     </LayoutTemplate>
-  );
+  )
 }

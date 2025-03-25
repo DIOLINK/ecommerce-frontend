@@ -1,9 +1,9 @@
-'use client';
+'use client'
 
-import { useTheme } from '@/app/_hooks';
+import { useTheme } from '@/app/_hooks'
 
 const ThemeController = () => {
-  const refIput = useTheme();
+  const refIput = useTheme()
   return (
     <label className="toggle text-base-content">
       <input
@@ -52,6 +52,6 @@ const ThemeController = () => {
         </g>
       </svg>
     </label>
-  );
-};
-export default ThemeController;
+  )
+}
+export default ThemeController

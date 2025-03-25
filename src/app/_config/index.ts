@@ -1,3 +1,3 @@
-export * from './constant';
-export * from './routes';
-export * from './theme';
+export * from './constant'
+export * from './routes'
+export * from './theme'
