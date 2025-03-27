@@ -4,7 +4,7 @@ import { Suspense } from 'react'
 
 export default function Auth() {
   return (
-    <Suspense fallback={<LoadingComponent />} name={ROUTES.PAGES.HOME.NAME}>
+    <Suspense fallback={<LoadingComponent />} name={ROUTES.PAGES.AUTH.NAME}>
       <AuthPage />
     </Suspense>
   )

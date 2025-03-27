@@ -19,5 +19,6 @@ export const ROUTES = {
   PAGES: {
     HOME: { PATH: '/', NAME: 'Home' },
     ABOUT: { PATH: '/about', NAME: 'About' },
+    AUTH: { PATH: '/auth', NAME: 'Authentication' },
   },
 }

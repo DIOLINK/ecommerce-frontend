@@ -1,3 +1,5 @@
+import { ROUTES } from '@/app/_config'
+import Link from 'next/link'
 import ThemeController from '../Theme/Controller'
 
 export default function Menu() {
@@ -13,16 +15,7 @@ export default function Menu() {
         </a>
       </li>
       <li>
-        <a className="justify-between">
-          Profile
-          <span className="badge">New</span>
-        </a>
-      </li>
-      <li>
-        <a>Settings</a>
-      </li>
-      <li>
-        <a>Logout</a>
+        <Link href={ROUTES.PAGES.AUTH.PATH}>Logout</Link>
       </li>
     </ul>
   )

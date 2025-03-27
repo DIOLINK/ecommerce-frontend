@@ -1,5 +1,6 @@
 export { default as Avatar } from './Avatar'
 export { default as FooterComponent } from './Footer'
+export { default as InputsRender } from './Inputs'
 export { default as Layout } from './Layout'
 export { default as LayoutTemplate } from './Layout/Template'
 export { default as LoadingComponent } from './Loading'
